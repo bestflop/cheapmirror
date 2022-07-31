@@ -55,10 +55,9 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("★Owner", "https://t.me/AT0712")
-    buttons.buildbutton("★Mirror Group", "https://t.me/botupquadrive")
-    buttons.buildbutton("★hannel", "https://t.me/botupquadrivechannel")
-    buttons.buildbutton("★Report Group", "https://t.me/AT0712")
+    buttons.buildbutton("★Mirror Group", "https://t.me/cheapluxurychat")
+    buttons.buildbutton("★Channel", "https://t.me/+XO5u1Wh9IQU3MTc9")
+    buttons.buildbutton("★File leech", "https://t.me/+XO5u1Wh9IQU3MTc9")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -204,7 +203,7 @@ def main():
                         chat_id, msg_id = map(int, f)
                     msg = '✔️Restarted successfully!'
                 else:
-                    msg = '✔️𝗕𝗼𝘁 𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗲𝗱! 𝗚𝗲𝘁 𝗳𝗶𝗹𝗲 𝗮𝗴𝗮𝗶𝗻'
+                    msg = '✔️Bot đã khởi động lại! Vui lòng tải lại các file chưa tải xong!'
                 for tag, links in data.items():
                      msg += f"\n\n{tag}: "
                      for index, link in enumerate(links, start=1):
@@ -236,7 +235,7 @@ def main():
     elif not notifier_dict and AUTHORIZED_CHATS:
         for id_ in AUTHORIZED_CHATS:
             try:
-                bot.sendMessage(id_, "✔️𝗕𝗼𝘁 𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗲𝗱! 𝗚𝗲𝘁 𝗳𝗶𝗹𝗲 𝗮𝗴𝗮𝗶𝗻", 'HTML')
+                bot.sendMessage(id_, "✔️Bot đã khởi động lại! Vui lòng tải lại các file chưa tải xong!", 'HTML')
             except Exception as e:
                 LOGGER.error(e)
 
