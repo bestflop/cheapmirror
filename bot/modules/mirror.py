@@ -226,7 +226,7 @@ class MirrorListener:
                 msg += f'\n<b>➦ Corrupted Files ●</b>{typ}'
             msg += f'\n\n<b>➦ User ●</b>{self.tag} <b>➦ 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮</b>'
             msg += f'\n<b>➦ It Tooks ●</b> {get_readable_time(time() - self.message.date.timestamp())}'
-            msg += f'\n\n<b>➦ Repo-By ✤ {TITLE_NAME}</b>\n\n𝑇ℎ𝑎𝑚 𝑔𝑖𝑎 𝑇𝐸𝐴𝑀𝐷𝑅𝐼𝑉𝐸 𝑜̛̉ 𝑑𝑢̛𝑜̛́𝑖 đ𝑒̂̉ 𝑐𝑜́ 𝑞𝑢𝑦𝑒̂̀𝑛 𝑡𝑟𝑢𝑦 𝑐𝑎̣̂𝑝 𝑓𝑖𝑙𝑒'
+            msg += f'\n\n<b>➦ Repo-By ✤ {TITLE_NAME}</b>\n\n𝐓𝐡𝐚𝐦 𝐠𝐢𝐚 𝐓𝐄𝐀𝐌𝐃𝐑𝐈𝐕𝐄 𝐨̛̉ 𝐝𝐮̛𝐨̛́𝐢 đ𝐞̂̉ 𝐜𝐨́ 𝐪𝐮𝐲𝐞̂̀𝐧 𝐭𝐫𝐮𝐲 𝐜𝐚̣̂𝐩 𝐟𝐢𝐥𝐞'
             if not files:
                 sendMessage(msg, self.bot, self.message)
             else:
@@ -246,7 +246,7 @@ class MirrorListener:
                 msg += f'\n<b>➦ Files ●</b>{files}'
             msg += f'\n\n<b>➦ User ●</b>{self.tag} <b>➦ 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮</b>'
             msg += f'\n<b>➦ It Tooks ●</b> {get_readable_time(time() - self.message.date.timestamp())}'
-            msg += f'\n\n<b>➦ Repo-By ✤ {TITLE_NAME}</b>\n\n𝑇ℎ𝑎𝑚 𝑔𝑖𝑎 𝑇𝐸𝐴𝑀𝐷𝑅𝐼𝑉𝐸 𝑜̛̉ 𝑑𝑢̛𝑜̛́𝑖 đ𝑒̂̉ 𝑐𝑜́ 𝑞𝑢𝑦𝑒̂̀𝑛 𝑡𝑟𝑢𝑦 𝑐𝑎̣̂𝑝 𝑓𝑖𝑙𝑒'
+            msg += f'\n\n<b>➦ Repo-By ✤ {TITLE_NAME}</b>\n\n𝐓𝐡𝐚𝐦 𝐠𝐢𝐚 𝐓𝐄𝐀𝐌𝐃𝐑𝐈𝐕𝐄 𝐨̛̉ 𝐝𝐮̛𝐨̛́𝐢 đ𝐞̂̉ 𝐜𝐨́ 𝐪𝐮𝐲𝐞̂̀𝐧 𝐭𝐫𝐮𝐲 𝐜𝐚̣̂𝐩 𝐟𝐢𝐥𝐞'
             buttons = ButtonMaker()
             link = short_url(link)
             buttons.buildbutton("🌼 Drive Link 🌼", link)
