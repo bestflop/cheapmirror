@@ -224,7 +224,7 @@ class MirrorListener:
             msg += f'\n<b>➦ Total Files ●</b>{folders}'
             if typ != 0:
                 msg += f'\n<b>➦ Corrupted Files ●</b>{typ}'
-            msg += f'\n\n<b>➦ User ●</b>{self.tag} <b>➦ Your file successfully...</b>'
+            msg += f'\n\n<b>➦ User ●</b>{self.tag} <b>➦ 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮</b>'
             msg += f'\n<b>➦ It Tooks ●</b> {get_readable_time(time() - self.message.date.timestamp())}'
             msg += f'\n\n<b>➦ Repo-By ✤ {TITLE_NAME}</b>'
             if not files:
@@ -244,7 +244,7 @@ class MirrorListener:
             if ospath.isdir(f'{DOWNLOAD_DIR}{self.uid}/{name}'):
                 msg += f'\n<b>➦ SubFolders ●</b>{folders}'
                 msg += f'\n<b>➦ Files ●</b>{files}'
-            msg += f'\n\n<b>➦ User ●</b>{self.tag} <b>➦ Your file successfully...</b>'
+            msg += f'\n\n<b>➦ User ●</b>{self.tag} <b>➦ 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙨𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮</b>'
             msg += f'\n<b>➦ It Tooks ●</b> {get_readable_time(time() - self.message.date.timestamp())}'
             msg += f'\n\n<b>➦ Repo-By ✤ {TITLE_NAME}</b>'
             buttons = ButtonMaker()
